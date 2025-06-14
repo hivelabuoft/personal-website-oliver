@@ -1,0 +1,33 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "[![Screenshot](./preview.png)](https://wowchemy.com/hugo-themes/)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliphant0803/PersonalWebpage.git"
+  },
+  "author": "Oliver Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliphant0803/PersonalWebpage/issues"
+  },
+  "homepage": "https://github.com/oliphant0803/PersonalWebpage#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [],
+  "dependencies": {
+    "mapbox-gl": "^3.12.0",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-pdf": "^9.2.1"
+  }
+}

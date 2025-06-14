@@ -1,0 +1,66 @@
+.map-canvas {
+  background-color: #f8f9fa;
+}
+
+.map-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.map-marker:hover {
+  transform: scale(1.2);
+}
+
+.minimal-popup .mapboxgl-popup-content {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.minimal-popup .mapboxgl-popup-tip {
+  border-top-color: #fff;
+}
+
+.map-popup h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #424242;
+}
+
+.map-popup p {
+  margin: 4px 0;
+  font-size: 12px;
+  color: #757575;
+}
+
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  font-size: 12px;
+}
+
+.legend-title {
+  font-size: 13px;
+  color: #424242;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.legend-marker {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}

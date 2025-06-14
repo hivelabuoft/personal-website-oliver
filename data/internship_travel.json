@@ -1,0 +1,19 @@
+{
+  "travels": [
+    {
+      "city": "Markham, Canada",
+      "lat": 43.8561,
+      "lng": -79.3370,
+      "year": 2023,
+      "company": "Huawei"
+    },
+    {
+      "city": "Toronto, Canada",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "year": 2022,
+      "company": "Fortran Traffics System Limited"
+    }
+  ]
+}
+

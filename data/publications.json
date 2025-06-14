@@ -1,0 +1,78 @@
+{
+  "publications": [
+    {
+      "id": 1,
+      "title": "Exploring the Design Space of Cognitive Engagement Techniques with AI-Generated Code for Enhanced Learning",
+      "authors": ["Majeed Kazemi", "Oliver Huang", "Sangho Soo", "Austin Z.Henley", "Tovi Grossman"],
+      "venue": {
+        "shortName": "IUI 2025",
+        "fullName": "ACM Conference on Intelligent User Interfaces"
+      },
+      "year": 2025,
+      "status": "accepted",
+      "tags": ["Human-AI Collaboration", "Education"],
+      "links": {
+        "pdf": "statics/uploads/papers/productive_friction.pdf",
+        "code": "https://github.com/MajeedKazemi/code-engagement-techniques/",
+        "try-live": "https://majeedkazemi.github.io/code-engagement-techniques/",
+        "doi": "https://dl.acm.org/doi/abs/10.1145/3708359.3712104"
+      },
+      "abstract": "Novice programmers are increasingly relying on Large Language Models (LLMs) to generate code for learning programming concepts. However, this interaction can lead to superficial engagement, giving learners an illusion of learning and hindering skill development. To address this issue, we conducted a systematic design exploration to develop seven cognitive engagement techniques aimed at promoting deeper engagement with AI-generated code. In this paper, we describe our design process, the initial seven techniques and results from a between-subjects study (N=82). We then iteratively refined the top techniques and further evaluated them through a within-subjects study (N=42). We evaluate the friction each technique introduces, their effectiveness in helping learners apply concepts to isomorphic tasks without AI assistance, and their success in aligning learners' perceived and actual coding abilities. Ultimately, our results highlight the most effective technique: guiding learners through the step-by-step problem-solving process, where they engage in an interactive dialog with the AI, prompting what needs to be done at each stage before the corresponding code is revealed."
+    },
+    {
+      "id": 2,
+      "title": "From Reality to Recognition: Evaluating Visualization Analogies for Novice Chart Comprehension",
+      "authors": ["Oliver Huang", "Patrick Lee", "Carolina Nobre"],
+      "venue": {
+        "shortName": "EuroVis 2025",
+        "fullName": "Eurographics Conference on Visualization"
+      },
+      "year": 2025,
+      "status": "accepted",
+      "tags": ["Data Visualization", "Education"],
+      "links": {
+        "pdf": "statics/uploads/papers/analogy.pdf",
+        "presentation": "https://visanalogy.my.canva.site/",
+        "participants-data": "https://github.com/hivelabuoft/AnalogyVis",
+        "try-live": "https://visanalogy.github.io/visualization-analogies/",
+        "doi": "https://diglib.eg.org/items/0a1d4227-ea23-4b78-9f24-52be6f527bcf"
+     },
+        "abstract": "Novice learners often have difficulty learning new visualization types because they tend to interpret novel visualizations through the mental models of simpler charts they have previously encountered. Traditional visualization teaching methods, which usually rely on directly translating conceptual aspects of data into concrete data visualizations, often fail to attend to the needs of novice learners navigating this tension. To address this, we conducted an empirical exploration of how analogies can be used to help novices with chart comprehension. We introduced visualization analogies: visualizations that map data structures to real-world contexts to facilitate an intuitive understanding of novel chart types. We evaluated this pedagogical technique using a within-subject study (N=128) where we taught 8 chart types using visualization analogies. Our findings show that visualization analogies improve visual analysis skills and help learners transfer their understanding to actual charts. They effectively introduce visual embellishments, cater to diverse learning preferences, and are preferred by novice learners over traditional chart visualizations. This study offers empirical insights and open-source tools to advance visualization education through analogical reasoning."
+    },
+    {
+      "id": 3,
+      "title": "ScholarMate: A Mixed-Initiative Tool for Qualitative Knowledge Work and Information Sensemaking",
+      "authors": ["Runlong Ye", "Matthew Verona", "Patrick Lee", "Oliver Huang", "Carolina Nobre"],
+      "venue": {
+        "shortName": "CHIWORK 2025",
+        "fullName": "ACM Symposium on Human-Computer Interaction for Work"
+      },
+      "year": 2025,
+      "status": "accepted",
+      "tags": ["Human-AI Collaboration"],
+      "links": {
+        "pdf": "statics/uploads/papers/scholarmate.pdf",
+        "try-live": "https://scholar-mate-eta.vercel.app/",
+        "doi": "https://arxiv.org/abs/2504.14406"
+     },
+        "abstract": "Synthesizing knowledge from large document collections is a critical yet increasingly complex aspect of qualitative research and knowledge work. While AI offers automation potential, effectively integrating it into human-centric sensemaking workflows remains challenging. We present ScholarMate, an interactive system designed to augment qualitative analysis by unifying AI assistance with human oversight. ScholarMate enables researchers to dynamically arrange and interact with text snippets on a non-linear canvas, leveraging AI for theme suggestions, multi-level summarization, and evidence-based theme naming, while ensuring transparency through traceability to source documents. Initial pilot studies indicated that users value this mixed-initiative approach, finding the balance between AI suggestions and direct manipulation crucial for maintaining interpretability and trust. We further demonstrate the system's capability through a case study analyzing 24 papers. By balancing automation with human control, ScholarMate enhances efficiency and supports interpretability, offering a valuable approach for productive human-AI collaboration in demanding sensemaking tasks common in knowledge work."
+    },
+    {
+      "id": 4,
+      "title": "The Design Space of Recent AI-assisted Research Tools for Ideation, Sensemaking, and Scientific Creativity",
+      "authors": ["Runlong Ye", "Matthew Verona", "Oliver Huang", "Patrick Lee", "Micheal Luit", "Carolina Nobre"],
+      "venue": {
+        "shortName": "UIST 2025",
+        "fullName": "ACM Symposium on User Interface Software and Technology"
+      },
+      "year": 2025,
+      "status": "in-review",
+      "tags": ["Human-AI Collaboration"],
+      "links": {
+        "pdf": "statics/uploads/papers/aiAssistedTools.pdf",
+        "doi": "https://arxiv.org/pdf/2502.16291"
+     },
+        "abstract": "To examine recent developments, we surveyed publications from leading HCI venues over the past three years, closely analyzing thirteen tools to better understand the novel capabilities of these AI-assisted systems and the design spaces they enable: seven employing traditional AI or customized transformer-based approaches, and six integrating openaccess large language models (LLMs) ."
+    }
+  ]
+}

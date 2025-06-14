@@ -1,0 +1,25 @@
+{
+  "travels": [
+    {
+      "city": "Yokohama, Japan",
+      "lat": 35.4437,
+      "lng": 139.6380,
+      "year": 2025,
+      "conference": "CHI"
+    },
+    {
+      "city": "Cagliari, Italy",
+      "lat": 39.2238,
+      "lng": 9.1217,
+      "year": 2025,
+      "conference": "IUI"
+    },
+    {
+      "city": "Luxembourg City, Luxembourg",
+      "lat": 49.6116,
+      "lng": 6.1319,
+      "year": 2025,
+      "conference": "EuroVis"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>PDF Test</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/react-pdf/dist/umd/react-pdf.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 20px; }
+    .pdf-container { width: 200px; height: 280px; border: 1px solid #ccc; position: relative; overflow: hidden; }
+    .pdf-page { width: 100%; }
+    .error { color: red; padding: 10px; text-align: center; }
+    .loading { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.8); }
+  </style>
+</head>
+<body>
+  <h1>PDF Rendering Test</h1>
+  <p>Testing PDF rendering with react-pdf</p>
+  
+  <div id="root"></div>
+  
+  <script>
+    // Initialize PDF.js worker
+    window.ReactPDF.pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/build/pdf.worker.min.js';
+    
+    const { useState, useEffect } = React;
+    const { Document, Page } = window.ReactPDF;
+    
+    function PDFTest() {
+      const [pdfUrl, setPdfUrl] = useState('/static/uploads/papers/productive_friction.pdf');
+      const [pageNum, setPageNum] = useState(1);
+      const [error, setError] = useState(null);
+      const [loading, setLoading] = useState(true);
+      
+      function onDocumentLoadSuccess() {
+        setError(null);
+        setLoading(false);
+        console.log('PDF loaded successfully:', pdfUrl);
+      }
+      
+      function onDocumentLoadError(err) {
+        console.error('Error loading PDF:', err);
+        setError(`Error loading PDF: ${err.message}`);
+        setLoading(false);
+      }
+      
+      // Create absolute URL
+      const absolutePdfUrl = window.location.origin + pdfUrl;
+      
+      return React.createElement(
+        'div',
+        null,
+        React.createElement('h2', null, 'Testing PDF from: ' + absolutePdfUrl),
+        React.createElement(
+          'div',
+          { className: 'pdf-container' },
+          React.createElement(
+            Document,
+            {
+              file: absolutePdfUrl,
+              onLoadSuccess: onDocumentLoadSuccess,
+              onLoadError: onDocumentLoadError,
+              options: {
+                cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/cmaps/',
+                cMapPacked: true,
+                standardFontDataUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/standard_fonts/'
+              }
+            },
+            !error && React.createElement(Page, { pageNumber: pageNum, className: 'pdf-page', width: 200, renderTextLayer: false, renderAnnotationLayer: false }),
+            error && React.createElement('div', { className: 'error' }, error),
+            loading && React.createElement('div', { className: 'loading' }, 'Loading...')
+          )
+        )
+      );
+    }
+    
+    // Render the component
+    const rootElement = document.getElementById('root');
+    ReactDOM.render(React.createElement(PDFTest), rootElement);
+  </script>
+</body>
+</html>

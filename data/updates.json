@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "date": "June 3, 2025",
+    "content": "Presented my paper ",
+    "paperTitle": "From Reality to Recognition",
+    "paperLink": "/static/uploads/papers/from_reality_to_recognition.pdf",
+    "contentAfter": " at EuroVis 2025 in Luxembourg.",
+    "hasPaper": true
+  },
+  {
+    "id": 2,
+    "date": "May 5, 2025",
+    "content": "Travelling to Yokohama, Japan for the CHI 2025.",
+    "hasPaper": false
+  },
+  {
+    "id": 3, 
+    "date": "March 28, 2025",
+    "content": "Presented my co-authored paper ",
+    "paperTitle": "Cognitive Engagement Techniques with AI-Generated Code",
+    "paperLink": "/static/uploads/papers/cognitive_engagement_techniques.pdf",
+    "contentAfter": " at IUI 2025 in Cagliari, Italy.",
+    "hasPaper": true
+  },
+  {
+    "id": 4,
+    "date": "September 15, 2024",
+    "content": "Accepted University of Toronto's offer for a MSc position in the DGP Lab, excited to work with Prof. Carolina Nobre and the team!",
+    "hasPaper": false
+  }
+]

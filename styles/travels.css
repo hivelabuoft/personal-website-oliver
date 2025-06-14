@@ -1,0 +1,71 @@
+.travels-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.travels-header {
+  padding: 12px 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.travel-stats-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+.stat-item {
+  margin: 0 8px;
+}
+
+.stat-separator {
+  color: #999;
+}
+
+.travel-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.travel-filter-btn {
+  background-color: #f0f2f5;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.travel-filter-btn:hover {
+  background-color: #e4e6e9;
+}
+
+.travel-filter-btn.active {
+  background-color: #333;
+  color: white;
+}
+
+.map-container-full {
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+
+.map-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa;
+}
