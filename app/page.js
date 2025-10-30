@@ -159,6 +159,9 @@ function PublicationsList({ maxCount = 3 }) {
                   {pub.links?.doi && (
                     <a href={pub.links.doi} target="_blank" rel="noopener noreferrer" className="pub-link">DOI</a>
                   )}
+                  {pub.links?.poster && (
+                    <a href={pub.links.poster} target="_blank" rel="noopener noreferrer" className="pub-link presentation-link">Poster</a>
+                  )}
                 </div>
               </div>
 
