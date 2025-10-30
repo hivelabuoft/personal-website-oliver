@@ -97,7 +97,9 @@ const Sidebar = () => {
       
       {/* Latest Updates */}
       <div className={styles.latestUpdateSection}>
-        <h3 className={styles.sectionTitle}>Latest Updates</h3>
+        <Link href="/news">
+          <h3 className={styles.sectionTitle}>Latest Updates</h3>
+        </Link>
         {latestUpdates.map(update => {
           // Format date: Replace "2025" with "'25", "2024" with "'24", etc.
           const formattedDate = update.date.replace(/\b20(\d{2})\b/g, "'$1");
@@ -112,12 +114,21 @@ const Sidebar = () => {
                     <a 
                       href={update.paperLink} 
                       className={styles.paperLink}
-                      target="_blank" 
-                      rel="noopener noreferrer"
                     >
                       {update.paperTitle}
                     </a>
                     {update.contentAfter}
+                    {update.hasSecondPaper && (
+                      <>
+                        <a 
+                          href={update.secondPaperLink} 
+                          className={styles.paperLink}
+                        >
+                          {update.secondPaperTitle}
+                        </a>
+                        {update.finalContent}
+                      </>
+                    )}
                   </>
                 ) : (
                   update.content

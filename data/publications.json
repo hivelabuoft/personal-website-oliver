@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Exploring the Design Space of Cognitive Engagement Techniques with AI-Generated Code for Enhanced Learning",
-      "authors": ["Majeed Kazemi", "Oliver Huang", "Sangho Soo", "Austin Z.Henley", "Tovi Grossman"],
+      "authors": ["Majeed Kazemi", "Oliver Huang", "Sangho Suh", "Austin Z.Henley", "Tovi Grossman"],
       "venue": {
         "shortName": "IUI 2025",
         "fullName": "ACM Conference on Intelligent User Interfaces"
@@ -11,8 +11,9 @@
       "year": 2025,
       "status": "accepted",
       "tags": ["Human-AI Collaboration", "Education"],
+      "href": "/publications#cognitive-engagement-techniques",
       "links": {
-        "pdf": "statics/uploads/papers/productive_friction.pdf",
+        "pdf": "/static/uploads/papers/productive_friction.pdf",
         "code": "https://github.com/MajeedKazemi/code-engagement-techniques/",
         "try-live": "https://majeedkazemi.github.io/code-engagement-techniques/",
         "doi": "https://dl.acm.org/doi/abs/10.1145/3708359.3712104"
@@ -30,8 +31,9 @@
       "year": 2025,
       "status": "accepted",
       "tags": ["Data Visualization", "Education"],
+      "href": "/publications#from-reality-to-recognition",
       "links": {
-        "pdf": "statics/uploads/papers/analogy.pdf",
+        "pdf": "/static/uploads/papers/analogy.pdf",
         "presentation": "https://visanalogy.my.canva.site/",
         "participants-data": "https://github.com/hivelabuoft/AnalogyVis",
         "try-live": "https://visanalogy.github.io/visualization-analogies/",
@@ -50,8 +52,9 @@
       "year": 2025,
       "status": "accepted",
       "tags": ["Human-AI Collaboration"],
+      "href": "/publications#scholarmate",
       "links": {
-        "pdf": "statics/uploads/papers/scholarmate.pdf",
+        "pdf": "/static/uploads/papers/scholarmate.pdf",
         "try-live": "https://scholar-mate-eta.vercel.app/",
         "doi": "https://arxiv.org/abs/2504.14406"
      },
@@ -68,8 +71,9 @@
       "year": 2025,
       "status": "preprint",
       "tags": ["Human-AI Collaboration"],
+      "href": "/publications#ai-assisted-research-tools",
       "links": {
-        "pdf": "statics/uploads/papers/aiAssistedTools.pdf",
+        "pdf": "/static/uploads/papers/aiAssistedTools.pdf",
         "doi": "https://arxiv.org/pdf/2502.16291"
      },
         "abstract": "To examine recent developments, we surveyed publications from leading HCI venues over the past three years, closely analyzing thirteen tools to better understand the novel capabilities of these AI-assisted systems and the design spaces they enable: seven employing traditional AI or customized transformer-based approaches, and six integrating openaccess large language models (LLMs) ."
@@ -79,18 +83,56 @@
       "title": "Vistruct: Simulating Expert-Like Reasoning Through Task Decomposition and Visual Attention",
       "authors": ["Oliver Huang", "Carolina Nobre"],
       "venue": {
-        "shortName": "IEEE VIS 2025",
+        "shortName": "VIS 2025",
         "fullName": "IEEE VIS: Visualization & Visual Analytics"
       },
       "year": 2025,
       "status": "accepted",
       "tags": ["Data Visualization", "Human-AI Collaboration"],
+      "href": "/publications#vistruct",
       "links": {
-        "pdf": "statics/uploads/papers/vistruct.pdf",
+        "pdf": "/static/uploads/papers/vistruct.pdf",
         "try-live": "https://vi-struct.vercel.app/",
         "presentation": "https://www.canva.com/design/DAG2AyVbC8M/NMoqezXOn_qdQ7Ef1RBNBw/view?utm_content=DAG2AyVbC8M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he8d3b24846"
       },
       "abstract": "Data visualization tasks often require multi-step reasoning, and the interpretive strategies experts use—such as decomposing complex goals into smaller subtasks and selectively attending to key chart regions—are rarely made explicit. We developed ViStruct as an automated pipeline that simulates these expert behaviours by breaking high-level visual questions into structured analytic steps and highlighting semantically relevant chart areas. Leveraging large language and vision-language models, we evaluate the system on 45 tasks across 12 chart types and validate its outputs with trained visualization users, confirming its ability to produce interpretable and expert-aligned reasoning sequences"
+    },
+    {
+      "id": 6,
+      "title": "TreeReader: A Hierarchical Academic Paper Reader — Powered by Language Models",
+      "authors": ["Zijian Zhang", "Pan Chen", "Fangshi Du", "Runlong Ye", "Oliver Huang", "Michael Liut", "Alán Aspuru-Guzik"],
+      "venue": {
+          "shortName": "VL/HCC 2025",
+          "fullName": "IEEE Symposium on Visual Languages and Human Centric Computing"
+      },
+      "year": 2025,
+        "status": "accepted",
+        "tags": ["Human-AI Collaboration"],
+        "href": "/publications#treereader",
+        "links": {
+          "pdf": "/static/uploads/papers/treereader.pdf",
+          "code": "https://github.com/aspuru-guzik-group/TreeReader",
+          "try-live": "https://www.treer.ai/"
+        },
+      "abstract": "Efficiently navigating and understanding academic papers is crucial for scientific progress. Traditional linear formats like PDF and HTML can cause cognitive overload and obscure a paper’s hierarchical structure, making it difficult to locate key information. While LLM-based chatbots offer summarization, they often lack nuanced understanding of specific sections, may produce unreliable information, and typically discard the document’s navigational structure. Drawing insights from a formative study on academic reading practices, we introduce TreeReader, a novel language model-augmented paper reader. TreeReader decomposes papers into an interactive tree structure where each section is initially represented by an LLM-generated concise summary, with underlying details accessible on demand. This design allows users to quickly grasp core ideas, selectively explore sections of interest, and verify summaries against the source text. A user study was conducted to evaluate TreeReader’s impact on reading efficiency and comprehension. TreeReader provides a more focused and efficient way to navigate and understand complex academic literature by bridging hierarchical summarization with interactive exploration."
+    },
+    {
+      "id": 7,
+      "title": "Toward Supporting Narrative-Driven Data Exploration: Barriers and Design Opportunities",
+      "authors": ["Oliver Huang", "Carolina Nobre"],
+      "venue": {
+        "shortName": "VIS 2025 (Extended Abstract)",
+        "fullName": "IEEE VIS: Visualization & Visual Analytics (Extended Abstract)"
+      },
+      "year": 2025,
+      "status": "accepted",
+      "tags": ["Data Visualization", "Narrative-Driven Analysis"],
+      "href": "/publications#vis-poster-narrative-exploration",
+      "links": {
+        "pdf": "/static/uploads/papers/visPoster.pdf",
+        "poster": "https://www.canva.com/design/DAGrLvVvuDY/3Dx3-BMkcWLYcrcXOOuYfw/view?utm_content=DAGrLvVvuDY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0ac8a2d2be"
+      },
+      "abstract": "Analysts increasingly explore data through evolving, narrative-driven inquiries, moving beyond static dashboards and predefined metrics as their questions deepen and shift. As these explorations progress, insights often become dispersed across views, making it challenging to maintain context or clarify how conclusions arise. Through a formative study with 48 participants, we identify key barriers that hinder narrative-driven exploration, including difficulty maintaining context across views, tracing reasoning paths, and externalizing evolving interpretations. Our findings surface design opportunities to support narrative-driven analysis better."
     }
   ]
 }
