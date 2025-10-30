@@ -20,6 +20,13 @@
       "lng": 6.1319,
       "year": 2025,
       "conference": "EuroVis"
+    },
+    {
+      "city": "Vienna, Austria",
+      "lat": 48.2082,
+      "lng": 16.3738,
+      "year": 2025,
+      "conference": "VIS"
     }
   ]
 }
